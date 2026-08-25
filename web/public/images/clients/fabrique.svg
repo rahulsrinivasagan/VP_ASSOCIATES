@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <linearGradient id="fabrique-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(10, 10)">
+    <rect x="4" y="4" width="32" height="32" rx="16" fill="url(#fabrique-grad)" opacity="0.12"/>
+    <path d="M12 20 L20 12 L28 20 L20 28 Z" fill="none" stroke="#8b5cf6" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="20" cy="20" r="3" fill="#ee8132"/>
+  </g>
+  <text x="56" y="28" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="16" fill="#0f172a" letter-spacing="-0.2">FABRIQUE</text>
+  <text x="56" y="42" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="9.5" fill="#6d28d9" letter-spacing="1.8">LAUNDROMAT</text>
+</svg>

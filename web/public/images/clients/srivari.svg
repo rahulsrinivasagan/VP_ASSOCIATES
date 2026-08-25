@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <linearGradient id="srivari-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(10, 11)">
+    <circle cx="19" cy="19" r="16" fill="#1e293b"/>
+    <circle cx="15" cy="15" r="5" fill="#3b82f6"/>
+    <circle cx="23" cy="15" r="5" fill="#f59e0b"/>
+    <circle cx="19" cy="23" r="5" fill="#10b981"/>
+  </g>
+  <text x="56" y="27" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="16" fill="#0f172a" letter-spacing="0">SRIVARI</text>
+  <text x="56" y="41" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="8.5" fill="#64748b" letter-spacing="0.8">COLOUR COATING</text>
+</svg>

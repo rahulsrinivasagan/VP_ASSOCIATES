@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <linearGradient id="justech-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(10, 11)">
+    <rect x="2" y="2" width="34" height="34" rx="8" fill="#1e293b"/>
+    <path d="M 12 12 H 18 M 15 12 V 24 C 15 27, 12 27, 10 25" fill="none" stroke="url(#justech-grad)" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="25" cy="15" r="2.5" fill="#ea580c"/>
+    <circle cx="25" cy="23" r="2.5" fill="#38bdf8"/>
+  </g>
+  <text x="56" y="27" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="16" fill="#0f172a" letter-spacing="0.5">JUSTECH</text>
+  <text x="56" y="41" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="8" fill="#64748b" letter-spacing="0.5">PRECISION INDUSTRY INDIA</text>
+</svg>

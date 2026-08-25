@@ -1,0 +1,11 @@
+{
+  "name": "vp-associates-monorepo",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix web run dev",
+    "dev:web": "npm --prefix web run dev",
+    "dev:sanity": "npm --prefix sanity run dev",
+    "build": "npm --prefix web run build",
+    "build:sanity": "npm --prefix sanity run build"
+  }
+}

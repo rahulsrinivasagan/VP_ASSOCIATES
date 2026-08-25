@@ -1,0 +1,483 @@
+/* ─── HomeWhyChooseUsSection (vpa-wcu-*) Styles ─────────────────────────── */
+
+.vpa-wcu-section {
+  background-color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.vpa-wcu-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  gap: 80px;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+
+/* ─── Left Column ─── */
+.vpa-wcu-left-col {
+  flex: 1.1;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  position: sticky;
+  top: 100px;
+  opacity: 0;
+  transform: translateY(80px);
+}
+
+.vpa-wcu-badge {
+  display: inline-block;
+  background-color: #f3f6f4;
+  color: #65756d;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-bottom: 24px;
+}
+
+.vpa-wcu-heading {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: clamp(32px, 3.8vw, 42px);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #03170d;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.vpa-wcu-desc {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 16px;
+  line-height: 1.6;
+  color: #65756d;
+  margin-bottom: 24px;
+}
+
+.vpa-wcu-profession-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 36px;
+  min-height: 36px;
+  background-color: #f3f6f4;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  border: 1px solid rgba(3, 23, 13, 0.08);
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.vpa-wcu-profession-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #F4A261;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.vpa-wcu-profession-box {
+  position: relative;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.vpa-wcu-profession-text {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  color: #03170d;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.vpa-wcu-action {
+  margin-bottom: 0;
+}
+
+.vpa-wcu-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #F4A261;
+  color: #03170d;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.vpa-wcu-btn:hover {
+  background-color: #E8903C;
+}
+
+.vpa-wcu-btn-arrow {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #03170d;
+  color: #F4A261;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vpa-wcu-btn-arrow svg {
+  width: 10px;
+  height: 10px;
+}
+
+/* ─── Right Column (Feature Cards Stack Base) ─── */
+.vpa-wcu-right-col {
+  flex: 1.5;
+  width: 100%;
+}
+
+.vpa-wcu-cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 100%;
+}
+
+.vpa-wcu-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 580px;
+  box-sizing: border-box;
+}
+
+.vpa-wcu-card-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: #f3f6f4;
+  color: #03170d;
+  margin-bottom: 16px;
+}
+
+.vpa-wcu-card-title {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 20px;
+  font-weight: 700;
+  color: #03170d;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.vpa-wcu-card-desc {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 14px;
+  line-height: 1.6;
+  color: #65756d;
+  margin-bottom: 20px;
+}
+
+.vpa-wcu-card-img-wrap {
+  width: 100%;
+  aspect-ratio: 1.6;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #f7f9f8;
+}
+
+.vpa-wcu-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ─── Mobile & Tablet Responsive Layout (<= 1024px) ─── */
+@media (max-width: 1024px) {
+  .vpa-wcu-section {
+    padding-top: 48px;
+    padding-bottom: 64px;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .vpa-wcu-container {
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .vpa-wcu-left-col {
+    max-width: 100%;
+    width: 100%;
+    position: relative !important;
+    top: auto !important;
+    /* Critical fix: reset both opacity AND transform so element is visible
+       on mobile even if GSAP ScrollTrigger hasn't fired yet */
+    opacity: 1;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  .vpa-wcu-badge {
+    margin-bottom: 16px;
+  }
+
+  .vpa-wcu-heading {
+    font-size: clamp(34px, 8.5vw, 42px);
+    line-height: 1.04;
+    letter-spacing: -0.025em;
+    text-align: left;
+    text-wrap: balance;
+    word-break: break-word;
+    margin-bottom: 20px;
+  }
+
+  .vpa-wcu-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #65756d;
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .vpa-wcu-profession-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 36px;
+    min-height: 36px;
+    background-color: #f3f6f4;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    border: 1px solid rgba(3, 23, 13, 0.08);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .vpa-wcu-profession-text {
+    font-size: 13.5px;
+    font-weight: 600;
+  }
+
+  .vpa-wcu-action {
+    margin-bottom: 8px;
+    width: auto;
+  }
+
+  .vpa-wcu-btn {
+    min-height: 48px;
+    padding: 13px 26px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    gap: 10px;
+  }
+
+  /* ─── Mobile Feature Cards Stack ─── */
+  .vpa-wcu-right-col {
+    width: 100%;
+    height: auto !important;
+    position: relative !important;
+  }
+
+  .vpa-wcu-cards-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    height: auto !important;
+    position: relative !important;
+    overflow: visible !important;
+  }
+
+  .vpa-wcu-card {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    /* Critical fix: reset both opacity AND transform for mobile cards */
+    opacity: 1;
+    transform: none;
+    width: 100% !important;
+    max-width: 100% !important;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #eef2ef;
+    padding: 24px;
+    box-sizing: border-box;
+    box-shadow: 0 6px 24px rgba(3, 23, 13, 0.05);
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vpa-wcu-card-icon-wrap {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 14px;
+    flex-shrink: 0;
+  }
+
+  .vpa-wcu-card-title {
+    font-size: 19px;
+    line-height: 1.25;
+    margin-bottom: 8px;
+    word-break: break-word;
+  }
+
+  .vpa-wcu-card-desc {
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 18px;
+    color: #65756d;
+  }
+
+  .vpa-wcu-card-img-wrap {
+    width: 100%;
+    aspect-ratio: 1.6;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-top: 0;
+    background-color: #f7f9f8;
+  }
+
+  .vpa-wcu-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+/* ─── Pinned stacked card transitions layout (Desktop-only >= 992px) ─── */
+@media (min-width: 992px) {
+  .vpa-wcu-section {
+    height: 100vh;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .vpa-wcu-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    box-sizing: border-box;
+  }
+
+  .vpa-wcu-left-col {
+    flex: 1.1;
+    max-width: 440px;
+    position: relative;
+    top: auto;
+    align-self: center;
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  .vpa-wcu-right-col {
+    flex: 1.5;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .vpa-wcu-cards-stack {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    overflow: hidden;
+  }
+
+  .vpa-wcu-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 580px;
+    height: 570px;
+    opacity: 0;
+    background-color: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 12px 48px rgba(3, 23, 13, 0.08);
+    padding: 32px;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vpa-wcu-card-img-wrap {
+    width: 100%;
+    flex: 1;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+}
+
+/* ─── Extra Small Screens (<= 374px) ─── */
+@media (max-width: 374px) {
+  .vpa-wcu-container {
+    padding-left: 14px;
+    padding-right: 14px;
+    gap: 24px;
+  }
+  .vpa-wcu-heading {
+    font-size: 32px;
+  }
+  .vpa-wcu-card {
+    padding: 18px;
+  }
+}
+
+

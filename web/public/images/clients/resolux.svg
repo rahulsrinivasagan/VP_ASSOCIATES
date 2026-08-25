@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <linearGradient id="resolux-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(10, 11)">
+    <!-- Aerodynamic wind vortex shape -->
+    <path d="M 19 3 C 27 3, 35 11, 35 19 C 35 27, 27 35, 19 35 C 11 35, 3 27, 3 19 C 3 11, 11 3, 19 3 Z" fill="none" stroke="url(#resolux-grad)" stroke-width="2.5"/>
+    <path d="M 19 8 C 24 13, 26 19, 19 24 C 14 19, 14 13, 19 8 Z" fill="#0284c7"/>
+    <circle cx="19" cy="19" r="2.5" fill="#f5821f"/>
+  </g>
+  <text x="56" y="27" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="17" fill="#0284c7" letter-spacing="-0.2">RESOLUX</text>
+  <text x="56" y="41" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="8.5" fill="#64748b" letter-spacing="1">INDIA PVT LTD</text>
+</svg>

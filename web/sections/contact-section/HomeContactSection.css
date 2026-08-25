@@ -1,0 +1,428 @@
+/* ─── HomeContactSection (vpa-contact-*) Styles ─────────────────────────── */
+
+.vpa-contact-section {
+  background-color: #ffffff; /* Large white background */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.vpa-contact-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+
+.vpa-contact-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 48px;
+}
+
+.vpa-contact-left {
+  flex: 1 1 60%;
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.vpa-contact-right {
+  flex: 1 1 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.vpa-contact-visual-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 380px;
+}
+
+/* FSSAI Certification Badge */
+.vpa-contact-cert-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.vpa-contact-cert-badge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 22px 9px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid rgba(238, 129, 50, 0.18);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vpa-contact-cert-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(238, 129, 50, 0.1);
+}
+
+.vpa-contact-cert-img {
+  height: 36px;
+  width: auto;
+  max-width: 130px;
+  object-fit: contain;
+  display: block;
+}
+
+.vpa-contact-cert-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 11px;
+  font-weight: 700;
+  color: #1b5e20;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.vpa-contact-logo-box {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(238, 129, 50, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vpa-contact-logo-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(238, 129, 50, 0.12);
+}
+
+.vpa-contact-logo-img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Tag Badge */
+.vpa-contact-badge-wrap {
+  margin-bottom: 24px;
+}
+
+.vpa-contact-badge {
+  display: inline-block;
+  background-color: rgba(238, 129, 50, 0.08);
+  color: #ee8132;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Bold Main Heading */
+.vpa-contact-heading {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: clamp(36px, 4vw, 56px);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #0a0a0a;
+  margin-bottom: 20px;
+  max-width: 680px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+/* Description paragraph */
+.vpa-contact-desc {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 16px;
+  line-height: 1.6;
+  color: #5a4a50;
+  max-width: 640px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+/* Checklist row */
+.vpa-contact-checklist {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+  font-family: var(--font-inter, 'Inter', sans-serif);
+}
+
+.vpa-contact-check-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #5a4a50;
+  font-weight: 500;
+}
+
+.vpa-contact-check-icon {
+  color: #ee8132;
+  font-weight: bold;
+}
+
+/* Action button: Contact Our Team */
+.vpa-contact-action {
+  margin-bottom: 48px;
+}
+
+.vpa-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #ee8132;
+  color: #ffffff;
+  padding: 12px 26px;
+  border-radius: 9999px;
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vpa-contact-btn:hover {
+  background-color: #d97025;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(238, 129, 50, 0.25);
+}
+
+.vpa-contact-btn-arrow {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vpa-contact-btn-arrow svg {
+  width: 10px;
+  height: 10px;
+}
+
+/* ─── Contact Information block ─── */
+.vpa-contact-info-block {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.vpa-contact-info-title {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 13px;
+  font-weight: 600;
+  color: #887880;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+/* Phone & Email link rows */
+.vpa-contact-info-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.vpa-contact-info-icon {
+  color: #ee8132;
+  flex-shrink: 0;
+}
+
+.vpa-contact-phone-link,
+.vpa-contact-email-link {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: clamp(20px, 2.4vw, 26px);
+  font-weight: 700;
+  color: #0a0a0a;
+  text-decoration: none;
+}
+
+.vpa-contact-phone-link:hover,
+.vpa-contact-email-link:hover {
+  color: #ee8132;
+}
+
+/* ─── Responsive Styles ─── */
+@media (max-width: 991px) {
+  .vpa-contact-layout {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .vpa-contact-left {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .vpa-contact-right {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0 0;
+  }
+
+  .vpa-contact-visual-stack {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .vpa-contact-cert-badge {
+    padding: 10px 24px 9px;
+    max-width: 260px;
+  }
+
+  .vpa-contact-logo-box {
+    width: 100%;
+    max-width: 340px;
+    padding: 22px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .vpa-contact-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .vpa-contact-heading {
+    font-size: 28px;
+  }
+
+  .vpa-contact-checklist {
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  .vpa-contact-action {
+    margin-bottom: 36px;
+  }
+
+  .vpa-contact-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0 0;
+  }
+
+  .vpa-contact-visual-stack {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .vpa-contact-cert-badge {
+    padding: 8px 18px 7px;
+    border-radius: 12px;
+    max-width: 240px;
+  }
+
+  .vpa-contact-cert-img {
+    height: 30px;
+    max-width: 115px;
+    object-fit: contain;
+  }
+
+  .vpa-contact-cert-label {
+    font-size: 10px;
+  }
+
+  .vpa-contact-logo-box {
+    width: 100%;
+    max-width: 290px;
+    padding: 18px;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+
+  .vpa-contact-logo-img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+  }
+}
+
+/* ─── Mobile Small (≤374px) ─── */
+@media (max-width: 374px) {
+  .vpa-contact-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .vpa-contact-heading {
+    font-size: 24px;
+  }
+  .vpa-contact-desc {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .vpa-contact-phone-link,
+  .vpa-contact-email-link {
+    font-size: 18px;
+  }
+  .vpa-contact-visual-stack {
+    max-width: 250px;
+    gap: 12px;
+  }
+  .vpa-contact-cert-badge {
+    padding: 7px 14px 6px;
+  }
+  .vpa-contact-cert-img {
+    height: 25px;
+    max-width: 95px;
+  }
+  .vpa-contact-logo-box {
+    max-width: 250px;
+    padding: 14px;
+  }
+  .vpa-contact-logo-img {
+    max-height: 180px;
+  }
+}
+

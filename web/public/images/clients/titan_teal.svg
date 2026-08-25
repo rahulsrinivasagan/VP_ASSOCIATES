@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <linearGradient id="teal-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(10, 11)">
+    <rect x="2" y="2" width="34" height="34" rx="6" fill="url(#teal-grad)"/>
+    <path d="M 10 11 H 28 M 19 11 V 27" stroke="#e2b15c" stroke-width="3.5" stroke-linecap="square"/>
+    <circle cx="19" cy="27" r="2" fill="#e2b15c"/>
+  </g>
+  <text x="56" y="27" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="16" fill="#0f172a" letter-spacing="1">TITAN TEAL</text>
+  <text x="56" y="41" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="7.5" fill="#64748b" letter-spacing="0.3">ENGINEERING &amp; AUTOMATION</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <linearGradient id="rexan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ee8132"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(10, 10)">
+    <rect x="2" y="2" width="36" height="36" rx="8" fill="#1e293b"/>
+    <circle cx="20" cy="20" r="10" fill="none" stroke="url(#rexan-grad)" stroke-width="4"/>
+    <circle cx="20" cy="20" r="4" fill="#ee8132"/>
+  </g>
+  <text x="58" y="28" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="18" fill="#0f172a" letter-spacing="0">REXAN</text>
+  <text x="58" y="42" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="10" fill="#ee8132" letter-spacing="1.2">STEEL TUBES</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <linearGradient id="bw-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc"/>
+      <stop offset="100%" stop-color="#003366"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(10, 11)">
+    <!-- BorgWarner iconic segmented curve emblem -->
+    <path d="M 6 19 C 6 10, 14 3, 23 3 C 27 3, 31 5, 34 8 L 29 13 C 27 11, 25 10, 23 10 C 18 10, 13 14, 13 19 C 13 24, 18 28, 23 28 C 25 28, 27 27, 29 25 L 34 30 C 31 33, 27 35, 23 35 C 14 35, 6 28, 6 19 Z" fill="url(#bw-grad)"/>
+    <circle cx="23" cy="19" r="3.5" fill="#0099d8"/>
+    <path d="M 27 11 L 34 4" stroke="#0099d8" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 27 27 L 34 34" stroke="#0099d8" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <text x="56" y="27" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="16" fill="#0f172a" letter-spacing="-0.5">BorgWarner</text>
+  <text x="56" y="41" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="8.5" fill="#64748b" letter-spacing="0.5">MORSE SYSTEMS INDIA</text>
+</svg>

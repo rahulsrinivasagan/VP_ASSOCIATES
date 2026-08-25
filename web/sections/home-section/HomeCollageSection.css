@@ -1,0 +1,183 @@
+/* --- HomeCollageSection (vpa-collage-*) Styles --------------------------- */
+
+.vpa-collage-section {
+  background-color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 100px; /* extra bottom breathing room for the 50px offset */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.vpa-collage-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* --- Badge --------------------------------------------------------------- */
+.vpa-collage-badge-wrapper {
+  margin-bottom: 16px;
+  opacity: 0;
+  transform: translateY(80px);
+}
+
+.vpa-collage-badge {
+  display: inline-block;
+  background-color: #f3f6f4;
+  color: #65756d;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+/* --- Heading -------------------------------------------------------------- */
+.vpa-collage-heading {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: clamp(16px, 1.8vw, 22px);
+  line-height: 1.55;
+  color: #03170d;
+  font-weight: 600;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 48px;
+  letter-spacing: -0.01em;
+  opacity: 0;
+  transform: translateY(80px);
+}
+
+/* --- Horizontal 4-card row ----------------------------------------------- */
+.vpa-collage-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* Every card shares base styles */
+.vpa-collage-image-card {
+  flex: 1 1 0;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  background-color: #f7f9f8;
+  height: 340px;
+}
+
+/* Odd cards (index 0, 2): top-aligned, animate UP from +100px */
+.vpa-collage-card--odd {
+  margin-top: 0;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+/* Even cards (index 1, 3): 50px lower, animate DOWN from -100px */
+.vpa-collage-card--even {
+  margin-top: 50px;
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+/* Image fills the card */
+.vpa-collage-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  display: block;
+}
+
+/* --- Tablet --------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .vpa-collage-section {
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+
+  .vpa-collage-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .vpa-collage-image-card {
+    height: 240px !important;
+  }
+
+  .vpa-collage-card--even {
+    margin-top: 0;
+  }
+
+  /* CSS fallback: visible if GSAP ScrollTrigger doesn't fire */
+  .vpa-collage-badge-wrapper,
+  .vpa-collage-heading,
+  .vpa-collage-card--odd,
+  .vpa-collage-card--even {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Mobile: stack vertically, drop the alternating offset --------------- */
+@media (max-width: 600px) {
+  .vpa-collage-section {
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+
+  .vpa-collage-heading {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .vpa-collage-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .vpa-collage-image-card {
+    height: 220px !important;
+  }
+
+  /* Reset offset on mobile - stacked cards align flush */
+  .vpa-collage-card--even {
+    margin-top: 0;
+  }
+
+  /* CSS fallback: ensure elements are visible if GSAP ScrollTrigger
+     doesn't fire (SSR, hydration timing). GSAP fromTo() overrides this. */
+  .vpa-collage-badge-wrapper,
+  .vpa-collage-heading,
+  .vpa-collage-card--odd,
+  .vpa-collage-card--even {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Mobile Small (≤374px) ─── */
+@media (max-width: 374px) {
+  .vpa-collage-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .vpa-collage-heading {
+    font-size: 14px;
+  }
+  .vpa-collage-image-card {
+    height: 180px !important;
+  }
+}

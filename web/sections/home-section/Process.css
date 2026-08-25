@@ -1,0 +1,220 @@
+/* ─── Process Section (vpa-process-*) Styles ──────────────────────────────── */
+
+.vpa-process-section {
+  width: 100%;
+  background-color: #03170d; /* Dark green — matches services dark block */
+  box-sizing: border-box;
+  padding-top: 80px;
+  padding-bottom: 96px;
+}
+
+.vpa-process-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+
+/* ─── Section Header ─── */
+.vpa-process-header {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.vpa-process-badge {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.vpa-process-heading {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: clamp(32px, 3.8vw, 46px);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #ffffff;
+  margin: 0 auto 18px;
+  max-width: 640px;
+  letter-spacing: -0.02em;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.vpa-process-desc {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 16px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.55);
+  max-width: 580px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* ─── Steps Grid ─── */
+.vpa-process-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px; /* Thin separator gap */
+  position: relative;
+}
+
+/* Connector line between steps */
+.vpa-process-steps::before {
+  content: "";
+  position: absolute;
+  top: 52px; /* Aligns with center of the number circle */
+  left: calc(12.5% + 24px);
+  right: calc(12.5% + 24px);
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(244, 162, 97, 0),
+    rgba(244, 162, 97, 0.5),
+    rgba(244, 162, 97, 0)
+  );
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.vpa-process-steps.line-visible::before {
+  opacity: 1;
+}
+
+/* ─── Individual Step Card ─── */
+.vpa-process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px 28px 36px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: background 0.3s ease, border-color 0.3s ease;
+  opacity: 0;
+  transform: translateY(50px);
+  cursor: default;
+}
+
+.vpa-process-step:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(244, 162, 97, 0.2);
+}
+
+/* Step Number Circle */
+.vpa-process-step-num {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #F4A261; /* Orange accent */
+  color: #03170d;
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 18px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  flex-shrink: 0;
+  letter-spacing: -0.03em;
+}
+
+/* Step Title */
+.vpa-process-step-title {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+/* Step Description */
+.vpa-process-step-desc {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+/* ─── Tablet ─── */
+@media (max-width: 1024px) {
+  .vpa-process-steps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .vpa-process-steps::before {
+    display: none;
+  }
+
+  /* CSS fallback: visible if GSAP ScrollTrigger doesn't fire */
+  .vpa-process-badge,
+  .vpa-process-heading,
+  .vpa-process-desc,
+  .vpa-process-step {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── Mobile ─── */
+@media (max-width: 600px) {
+  .vpa-process-section {
+    padding-top: 60px;
+    padding-bottom: 72px;
+  }
+
+  .vpa-process-steps {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .vpa-process-heading {
+    font-size: 30px;
+  }
+
+  /* CSS fallback: visible if GSAP ScrollTrigger doesn't fire */
+  .vpa-process-badge,
+  .vpa-process-heading,
+  .vpa-process-desc,
+  .vpa-process-step {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── Mobile Small (≤374px) ─── */
+@media (max-width: 374px) {
+  .vpa-process-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .vpa-process-heading {
+    font-size: 24px;
+  }
+  .vpa-process-step {
+    padding: 20px 16px 24px;
+  }
+  .vpa-process-step-num {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+

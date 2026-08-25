@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <rect width="100" height="100" rx="22" fill="#121829" />
+  <g transform="translate(10, 10) scale(0.16)">
+    <defs>
+      <clipPath id="vp-ico-clip-app">
+        <rect x="0" y="70" width="520" height="290" />
+      </clipPath>
+    </defs>
+    <g clip-path="url(#vp-ico-clip-app)">
+      <path d="M 115 50 L 211 380" stroke="#F5821F" stroke-width="58" stroke-linecap="butt" fill="none" />
+      <path d="M 221 380 L 317 50" stroke="#345e2a" stroke-width="18" stroke-linecap="butt" fill="none" />
+      <path d="M 249 380 L 345 50" stroke="#345e2a" stroke-width="18" stroke-linecap="butt" fill="none" />
+    </g>
+    <path d="M 333 87.5 L 415 87.5 C 455 87.5, 475 105, 475 130 C 475 155, 455 172.5, 415 172.5 L 297 172.5" stroke="#F5821F" stroke-width="35" stroke-linecap="butt" fill="none" />
+  </g>
+</svg>

@@ -1,0 +1,469 @@
+/* ─── HomeServicesSection (vpa-services-*) Styles ────────────────────────── */
+
+.vpa-services-section {
+  width: 100%;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.vpa-services-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+
+/* ─── Part 1: Services Header (White Background) ─── */
+.vpa-services-header-block {
+  background-color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 36px;
+  text-align: center;
+}
+
+/* Services Badge */
+.vpa-services-badge {
+  display: inline-block;
+  background-color: #f3f6f4;
+  color: #03170d;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+  border: 1px solid rgba(3, 23, 13, 0.08);
+}
+
+/* Heading */
+.vpa-services-heading {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: clamp(28px, 3.8vw, 42px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #03170d;
+  margin: 0 auto 18px;
+  max-width: 820px;
+  letter-spacing: -0.02em;
+}
+
+/* Description text */
+.vpa-services-desc {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 16px;
+  line-height: 1.65;
+  color: #65756d;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ─── Part 2: Featured Service Cards (Split Background) ─── */
+.vpa-services-cards-wrapper {
+  background: linear-gradient(to bottom, #ffffff 50%, #03170d 50%);
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.vpa-cards-relative {
+  position: relative;
+}
+
+/* Navigation Controls Container */
+.vpa-services-nav-controls {
+  position: absolute;
+  top: -64px;
+  right: 24px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.vpa-nav-arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #F4A261; /* Warm Gold / Orange accent */
+  color: #03170d;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(244, 162, 97, 0.3);
+  cursor: pointer;
+  transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.vpa-nav-arrow:hover {
+  background-color: #E8903C;
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(244, 162, 97, 0.45);
+}
+
+.vpa-nav-arrow:active {
+  transform: scale(0.96);
+}
+
+/* Overflow viewport wrapper */
+.vpa-services-cards-grid-overflow {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 8px;
+  padding-bottom: 24px;
+  touch-action: pan-y;
+}
+
+.vpa-services-cards-grid {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  will-change: transform;
+  transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+  transform: translateX(0);
+}
+
+.vpa-service-card {
+  flex: 0 0 calc(33.333% - 16px);
+  min-width: 290px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
+}
+
+.vpa-service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.14);
+}
+
+/* Card Image Wrapper */
+.vpa-card-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.5;
+  overflow: hidden;
+  background-color: #f7f9f8;
+}
+
+.vpa-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.vpa-service-card:hover .vpa-card-img {
+  transform: scale(1.06);
+}
+
+/* Card Badge Pill */
+.vpa-card-badge-pill {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: rgba(3, 23, 13, 0.78);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Card Body */
+.vpa-card-body {
+  padding: 28px 24px 32px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.vpa-card-title {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 22px;
+  font-weight: 700;
+  color: #03170d;
+  margin-top: 0;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+.vpa-card-desc {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 14px;
+  line-height: 1.6;
+  color: #65756d;
+  margin-top: 0;
+  margin-bottom: 24px;
+  flex: 1;
+}
+
+/* Card CTA Link */
+.vpa-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  color: #03170d;
+  text-decoration: none;
+  transition: color 0.25s ease;
+  margin-top: auto;
+}
+
+.vpa-card-link:hover {
+  color: #F4A261;
+}
+
+.vpa-card-arrow {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f3f6f4;
+  color: #03170d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+}
+
+.vpa-card-link:hover .vpa-card-arrow {
+  background-color: #F4A261;
+  color: #03170d;
+  transform: translate(3px, -3px);
+}
+
+/* Dots Indicator for Mobile & Tablet */
+.vpa-services-dots-indicator {
+  display: none !important;
+}
+
+/* ─── Part 3: Dark Feature Section (Dark Green Background) ─── */
+.vpa-services-dark-block {
+  background-color: #03170d;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+/* Three Feature Columns */
+.vpa-dark-features-grid {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.vpa-dark-feature-item {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Circular Icon Wrap */
+.vpa-feature-icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #092315;
+  color: #F4A261;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.vpa-feature-title {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+.vpa-feature-desc {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 14px;
+  line-height: 1.6;
+  color: #b0c9bb;
+  margin: 0;
+}
+
+/* Bottom Visual Showcase Cards */
+.vpa-services-bottom-images {
+  display: flex;
+  gap: 28px;
+  width: 100%;
+}
+
+.vpa-bottom-img-card {
+  flex: 1;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 1.45;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.vpa-bottom-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.vpa-bottom-img-card:hover .vpa-bottom-img {
+  transform: scale(1.05);
+}
+
+.vpa-bottom-img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 36px 28px 24px;
+  background: linear-gradient(to top, rgba(3, 23, 13, 0.95) 0%, rgba(3, 23, 13, 0.4) 65%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.vpa-overlay-tag {
+  display: inline-block;
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 11px;
+  font-weight: 700;
+  color: #F4A261;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+
+.vpa-overlay-title {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+/* ─── Responsive Styles ─── */
+@media (max-width: 1024px) {
+  .vpa-services-cards-grid {
+    gap: 20px;
+    transform: translateX(calc(-1 * var(--active-index, 0) * (50% + 10px)));
+  }
+
+  .vpa-service-card {
+    flex: 0 0 calc(50% - 10px);
+    min-width: 0;
+  }
+
+  .vpa-dark-features-grid {
+    gap: 28px;
+  }
+
+  .vpa-services-bottom-images {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .vpa-bottom-img-card {
+    aspect-ratio: 1.8;
+  }
+
+  .vpa-services-dots-indicator {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .vpa-services-header-block {
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+
+  .vpa-services-heading {
+    font-size: 26px;
+  }
+
+  .vpa-services-nav-controls {
+    position: static;
+    justify-content: flex-end;
+    margin-bottom: 12px;
+  }
+
+  .vpa-services-cards-grid {
+    gap: 16px;
+    transform: translateX(calc(-1 * var(--active-index, 0) * (100% + 16px)));
+  }
+
+  .vpa-service-card {
+    flex: 0 0 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .vpa-service-card:hover {
+    transform: none;
+  }
+
+  .vpa-dark-features-grid {
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+
+  .vpa-services-dark-block {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .vpa-services-dots-indicator {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .vpa-services-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .vpa-card-body {
+    padding: 20px 18px 24px;
+  }
+
+  .vpa-card-title {
+    font-size: 19px;
+  }
+
+  .vpa-bottom-img-card {
+    aspect-ratio: 1.4;
+  }
+
+  .vpa-overlay-title {
+    font-size: 17px;
+  }
+}

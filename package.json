@@ -1,6 +1,10 @@
 {
   "name": "vp-associates-monorepo",
   "private": true,
+  "workspaces": [
+    "web",
+    "sanity"
+  ],
   "scripts": {
     "dev": "npm --prefix web run dev",
     "dev:web": "npm --prefix web run dev",
